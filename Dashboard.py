@@ -22,6 +22,16 @@ with st.sidebar:
 # ---------------------------
 if page == "Dashboard":
     st.title("Welcome to My PROHI Practice Dashboard! 👋")
+    st.markdown(
+    """ 
+    ## Objectives of the Dashboard 
+        This Practice Sample Dashboard is formulated for follwing reasons: 
+            - to learn pre-filled codes and features added by the course lealders 
+            - to practice expertise taughted in the classes and laboratory sessions 
+            - to fullfill the tasks set in individual assignements 
+            - to submit individual assignement outputs as per the timeline """ ) 
+    # You can also add text right into the web as long comments (""") 
+    """ Note: The practice project is just a sample simple one, not necessarialy at comprehensive and full scale extent. """
     st.markdown("---")
 
     # -----------------------------
@@ -103,11 +113,18 @@ else:
     st.title("Htet Wai Aung")
     st.markdown(
         """
-        During the DSHI course I developed a compact data-science prototype to practise
-        data cleaning, exploratory analysis, and visualization. Using synthetic data I
-        demonstrated reproducible pipelines with NumPy and pandas and packaged visual
-        outputs with Plotly inside a Streamlit dashboard. This project focuses on
-        reproducibility and clear UI design for non-technical stakeholders.
+        ### Overview of DSHI Homework Project
+        In the previous DSHI course, I worked with a diabetes dataset from the UC Irvine Machine Learning Repository for my homework assignments. I carried out several data preprocessing steps, including assigning appropriate data types, renaming features, mapping values, and reordering features.
+        
+        ### Descriptive Analysis
+        During the descriptive analysis stage, I performed several analyses, such as calculating the average BMI values based on gender and age groups, assessing the prevalence of undiagnosed diabetes among respondents, and conducting correlation tests.
+        
+        ### Predictive Analysis
+        For the predictive analysis, I trained and tested ten machine learning models to predict the likelihood of a diabetes diagnosis (pre-diabetes or diabetes) using standard demographic measures, including age, gender, physical activity, and BMI. Based on performance metrics, I selected the Random Forest model with 150 trees/estimators as the best performer. 
+        
+        ### Recommndentation about the model
+        However, I did not recommend deploying this model, as additional demographic features should be incorporated to enhance its effectiveness for real-world applications.
+
         """
     )
     st.markdown("---")

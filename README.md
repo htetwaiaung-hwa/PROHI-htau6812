@@ -56,3 +56,17 @@ Tested on Python 3.12.7 with the following packages:
 ## Contributors
 
 _Add the project's authors, contact information, and links to websites or portfolios._
+
+## Steps done for the Individual Assignment 2
+'''
+  1. Learn the default codes in the project.
+  2. Run enviromenet and installed requirements.
+  3. Wrote codes as per instructions.
+  4. Check the output in the dashboard on Streamlit.
+  5. Revised the codes as necessary.
+'''
+
+## Two Screenshots for the Dashboard
+
+![SS1- Dashobard Page](./assets/DB_SS3.png)
+![SS2- About Page](./assets/DB_SS2.png)
