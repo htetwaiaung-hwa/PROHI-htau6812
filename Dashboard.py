@@ -1,55 +1,51 @@
 import streamlit as st
+import numpy as np
 
 st.set_page_config(
     page_title="PROHI Dashboard",
     page_icon="👋",
+    layout='wide'
 )
 
-# Sidebar configuration
-st.sidebar.image("./assets/project-logo.jpg",)
-st.sidebar.success("Select a tab above.")
+# Sidebar configuration with new logo, About page
+with st.sidebar:
+    st.image("./assets/Sample Project Logo.png")
+    st.markdown("## Navigation")
+    st.markdown("- Dashboard")
+    st.markdown("- About")
+    st.divider()
+    st.caption("PROHI practice dashboard — synthetic data demo")
 
 # # Page information
 
-st.write("# Welcome to PROHI Dashboard! 👋")
+st.write("# Welcome to My PROHI Practice Dashboard! 👋")
 
 st.markdown(
 """
-    ## Aims
+    ## Objectives of the Dashboard
 
-    After completing the course the student should be able to:
-    - explain basic project management methods
-    - be able to account for success factors in Health Informatics projects
-    - understand basic methods and tools in the field of data science and machine learning
-    - explain process models for data mining projects
-    - explain the difference between rule-based methods and machine learning methods
-    - apply basic project management methods
-    - work in an international multidisciplinary project group
-    - independently lead and implement a limited project in health informatics - document the steps in the design of a prototype for a health informatics project
-    - apply the steps in a process model for data mining projects
-    - apply methods from the field of text mining on different types of health informatics problems
-    - explain and argue for their positions regarding the implementation of a health informatics project
-    - explain how to work with sensitive health information in a safe and ethical way.
+    This Practice Sample Dashboard is formulated for follwing reasons:
+    - to learn pre-filled codes and features added by the course lealders
+    - to practice expertise taughted in the classes and laboratory sessions
+    - to fullfill the tasks set in individual assignements
+    - to submit individual assignement outputs as per the timeline
 
 """
 )
 
 # You can also add text right into the web as long comments (""")
 """
-The final project aims to apply data science concepts and skills on a 
-medical case study that you and your team select from a public data source.
-The project assumes that you bring the technical Python skills from 
-previous courses (*DSHI*: Data Science for Health Informatics), as well as 
-the analytical skills to argue how and why specific techniques could
-enhance the problem domain related to the selected dataset.
+Note: The practice project is just a sample simple one, not necessarialy at comprehensive and full scale extent.
 """
 
 ### UNCOMMENT THE CODE BELOW TO SEE EXAMPLE OF INPUT WIDGETS
 
 # DATAFRAME MANAGEMENT
-import numpy as np
 
-dataframe = np.random.randn(10, 20)
+"""
+    Sample Syntheic Data
+"""
+dataframe = np.random.randn(1, 100)
 st.dataframe(dataframe)
 
 # Add a slider to the sidebar:
