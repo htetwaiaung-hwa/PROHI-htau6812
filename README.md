@@ -68,5 +68,5 @@ _Add the project's authors, contact information, and links to websites or portfo
 
 ## Two Screenshots for the Dashboard
 
-![SS1- Dashobard Page](./assets/DB_SS3.png)
+![SS1- Dashobard Page](./assets/DB_SS1.png)
 ![SS2- About Page](./assets/DB_SS2.png)
